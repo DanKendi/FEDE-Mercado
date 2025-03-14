@@ -20,10 +20,15 @@ function detalhesProduto(props: detalhesProdutoProps) {
     //se o produto é encontrado exibe detalhes dele
     return (
         <>
-            <h2>DETALHES DO PRODUTO</h2>
-            <p><strong>ID: </strong>{produto?.id}</p>
-            <p><strong>Nome: </strong>{produto?.nome}</p>
-            <p><strong>Quantidade: </strong>{produto?.quantidade}</p>
+            <div className="flex items-center justify-center bg-gray-100 min-h-screen">
+                <div className="bg-white rounded-lg">
+                    <div className="bg-blue-500 p-4">
+                        <h2 className="text-white text-x1 font-bold">DETALHES DO PRODUTO</h2> </div>
+                    <p className="text-gray-700"><strong>ID: </strong>{produto?.id}</p>
+                    <p className="text-gray-700"><strong>Nome: </strong>{produto?.nome}</p>
+                    <p className="text-gray-700"><strong>Quantidade: </strong>{produto?.quantidade}</p>
+                </div>
+            </div>
         </>
     )
 }

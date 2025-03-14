@@ -22,7 +22,7 @@ function listaDeCompras(props: listaDeComprasProps) {
                         <hr />
                     </div>
                 );
-            })};
+            })}
         </>
     );
 };
